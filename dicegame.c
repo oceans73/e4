@@ -3,6 +3,10 @@
 #include <time.h>
 
 int main(void){
+  char s[30];
+  printf("What is your name?\n> ");
+  scanf("%s",s);
+  printf("Hello, %s!\n",s);
 
   int num1,num2,total=0;
 
@@ -15,6 +19,9 @@ int main(void){
     Die 1: %d\n\
     Die 2: %d\n\
     Total value: %d \n", num1,num2,total);
+
+  if(total>7) printf("You win!\n");
+  else printf("You lose!\n");
 
   return 0;
 }
