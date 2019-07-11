@@ -3,7 +3,10 @@
 #include <time.h>
 
 int main(void){
-
+  char s[30];
+  printf("What is your name?\n> ");
+  scanf("%s",s);
+  printf("Hello, %s!\n",s);
   int num1,num2,total=0;
 
   srand(time(NULL));
